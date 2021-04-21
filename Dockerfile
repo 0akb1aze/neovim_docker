@@ -6,7 +6,7 @@ RUN apt-get install ninja-build gettext libtool libtool-bin autoconf automake cm
 
 WORKDIR /opt/
 
-git clone https://github.com/neovim/neovim.git
+RUN git clone https://github.com/neovim/neovim.git
 
 WORKDIR /opt/neovim
 RUN make install
