@@ -9,4 +9,5 @@ WORKDIR /opt/
 RUN git clone https://github.com/neovim/neovim.git
 
 WORKDIR /opt/neovim
+RUN git checkout stable
 RUN make install
